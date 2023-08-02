@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    min-height: 10vh;
+}
+header #pokebusqueda{
+    box-shadow: none;
+    background: #2828282d;
+    border-radius: .5rem;
+    height: 2.5rem;
+    padding: .2rem;
+    border: none;
+    color: white;
+}
+
+p, span{
+    color: white;
+}
+/* INFO */
+.main-info{
+    height: 90vh;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+}
+.main-info .back{
+    margin-top: 1rem;
+    font-size: 50px;
+    color: #fdfdfd;
+}
+
+/* contenodor foto pokemon */
+.info1{
+    width: 30%;
+    color: #EEEEEE;
+    background:transparent;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.info1 img{
+    width: 75%;
+}
+.info1 .type{
+    margin-top: 10px;
+    border: #414141 solid 2px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+
+.descripcionP{
+    color: #EEEEEE;
+    color: black !important;
+    width: 50%;
+    height: 100% !important;
+    border-radius: 0rem 1rem 1rem 0rem;
+    padding: 1rem;
+    overflow: scroll;
+    border-left: rgb(47, 47, 51) solid 5px;
+}
+.descripcionP::-webkit-scrollbar{
+    background: transparent;
+    width: 0rem;
+}
+
+.descripcionP::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.details p{
+    font-weight: bold;
+    color: #ffffff;
+}
+.details span{
+    color: #da5454;
+    font-weight: bold;
+}
+.about-mini{
+    margin: 1rem 0;
+    padding: 5px;
+    text-align: start;
+}
+.about-mini h6{
+    color: #bdb8b8;
+    font-weight: bold;
+}
+.about-mini p{
+    margin: 0;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .main-info{
+        flex-direction: column;
+        padding: 0;
+    }
+    .contenedor{
+        flex-direction: column;
+        height: 100%;
+    }
+    .info1{
+        border-radius: 0rem;
+        width: 100%;
+        height: 50%;
+    }
+    .cart-text{
+        order: 1;
+    }
+    .texto-poke{
+        order: 3;
+    }
+    .btn-atras{
+        position: absolute;
+        top: -25px;
+    }
+    .info1 img{
+        order: 2;
+        width: 150px;
+    }
+    .descripcionP{
+        width: 100%;
+        border-radius: 0rem;
+    }   
+    
+}
+@media screen and (max-width: 400px){ 
+    .movimientos__container p{
+        width: 40%;
+    }
+}
